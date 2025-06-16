@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shota Kawata - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Shota Kawata</h1>
-    <p>Web Developer | Designer | 筋肉愛好家</p>
-  </header>
-  <section>
-    <h2>💡 スキル</h2>
-    <ul>
-      <li>Next.js / React</li>
-      <li>Ruby on Rails</li>
-      <li>Supabase / Prisma</li>
-      <li>Tailwind CSS / Shadcn/UI</li>
-    </ul>
-  </section>
-  <section>
-    <h2>🛠 プロジェクト</h2>
-    <ul>
-      <li><a href="https://topme.example.com" target="_blank">TopMe - SNS型ランキング</a></li>
-      <li><a href="https://mukimentary.example.com" target="_blank">Mukimentary - 筋肉AI掛け声</a></li>
-    </ul>
-  </section>
-  <footer>
-    <p>&copy; 2025 Shota Kawata</p>
-  </footer>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawata Shota | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 min-h-screen flex items-center justify-center px-4">
+    <main class="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center space-y-6">
+      <img src="https://avatars.githubusercontent.com/u/00000000?v=4" alt="Profile" class="w-24 h-24 rounded-full mx-auto border-4 border-pink-300" />
+      
+      <div>
+        <h1 class="text-2xl font-bold text-gray-900">川田 翔太</h1>
+        <p class="text-sm text-gray-500">Webエンジニア / フルスタック開発者</p>
+      </div>
 
+      <p class="text-gray-700 text-sm">
+        筋肉とWebのハイブリッド型エンジニア。<br />人を笑顔にするプロダクトが好きです💪
+      </p>
+
+      <div class="flex justify-center gap-3">
+        <a href="https://github.com/your-username" class="text-gray-600 hover:text-black transition" target="_blank">GitHub</a>
+        <a href="https://twitter.com/your-twitter" class="text-gray-600 hover:text-black transition" target="_blank">X(Twitter)</a>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2">
+        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Next.js</span>
+        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Rails</span>
+        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Tailwind CSS</span>
+        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Supabase</span>
+      </div>
+
+      <footer class="text-xs text-gray-400 pt-4 border-t">
+        &copy; 2025 Kawata Shota
+      </footer>
+    </main>
+  </body>
+</html>
