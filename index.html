@@ -3,37 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kawata Shota | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>川田 翔太 | ポートフォリオ</title>
+    <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-50 text-gray-800 min-h-screen flex items-center justify-center px-4">
-    <main class="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center space-y-6">
-      <img src="https://avatars.githubusercontent.com/u/00000000?v=4" alt="Profile" class="w-24 h-24 rounded-full mx-auto border-4 border-pink-300" />
-      
-      <div>
-        <h1 class="text-2xl font-bold text-gray-900">川田 翔太</h1>
-        <p class="text-sm text-gray-500">Webエンジニア / フルスタック開発者</p>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Hero セクション -->
+<section class="py-16 text-center bg-white border-b">
+  <img src="./public/logo/kawata.png" alt="Shota Kawata Icon" class="mx-auto w-24 h-24 rounded-full mb-4 shadow-md" />
+  <h1 class="text-4xl font-bold text-gray-900">Shota Kawata(30♂)</h1>
+  <p class="mt-2 text-lg text-gray-600">営業もできるフルスタックなエンジニアを目指しています</p>
+    <p class="mt-4 max-w-xl mx-auto text-sm text-gray-500 leading-relaxed">
+    新卒から法人向けの営業・マーケティング、新規サービスの企画立ち上げなど事業運営のフロント面を一気通貫で経験してきました。
+    現在はモダンなweb技術やAIを活かし、自分のアイデアをカタチにするフルスタック開発に取り組んでいます。
+    将来的には、企画・開発・グロースすべてに関われるプロダクトマネージャーを目指しています。
+  </p>
+  <div class="mt-4 text-sm text-gray-500 space-y-1">
+    <p><strong>Job:</strong> 営業企画 → 新規サービス企画 → 法人営業・マーケティング</p>
+    <p><strong>Like:</strong> 筋トレ、ボードゲーム、ポーカー、アニメ鑑賞、ストリートダンス、ハンドボール</p>
+  </div>
+</section>
+
+    <!-- ポートフォリオ セクション -->
+    <section class="py-12 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-center">ポートフォリオ</h2>
+
+        <!-- 公開中 -->
+        <div class="space-y-6">
+          <div class="p-6 border rounded-lg shadow-sm flex items-start gap-4 bg-white">
+            <img src="./public/logo/topme.png" alt="TopMe ロゴ" class="w-12 h-12 object-contain" />
+            <div>
+              <h3 class="text-xl font-semibold">TopMe</h3>
+              <p class="text-gray-600">好きなものをランキングにしてプロフィールにするSNS</p>
+              <p class="text-sm text-gray-500 mt-1">技術: Next.js15, Supabase, Prisma, Clerk, Zod, Tailwind CSS</p>
+              <div class="mt-2 flex gap-4 text-sm">
+                <a href="https://topme.jp" class="text-blue-600 underline" target="_blank">サービス</a>
+                <a href="https://github.com/kawatako/TopMe" class="text-blue-600 underline" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 border rounded-lg shadow-sm flex items-start gap-4 bg-white">
+            <img src="./public/logo/mukimentary.png" alt="Mukimentary ロゴ" class="w-12 h-12 object-contain" />
+            <div>
+              <h3 class="text-xl font-semibold">Mukimentary</h3>
+              <p class="text-gray-600">AIで魅力的な掛け声を生成するフィジーカーの大会用アプリ</p>
+              <p class="text-sm text-gray-500 mt-1">技術: Next.js15,Rails API, Render,S3,
+OpenAI API, Tailwind CSS </p>
+              <div class="mt-2 flex gap-4 text-sm">
+                <a href="https://www.mukimentary.com" class="text-blue-600 underline" target="_blank">サービス</a>
+                <a href="https://github.com/kawatako/mukimentary" class="text-blue-600 underline" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 非公開中 -->
+        <div class="mt-10">
+          <h3 class="text-lg font-semibold text-gray-700 mb-4">非公開中</h3>
+          <div class="p-6 border rounded-lg shadow-sm flex items-start gap-4 bg-white">
+            <img src="./public/logo/localknot.png" alt="LocalKnot ロゴ" class="w-12 h-12 object-contain" />
+            <div>
+              <h4 class="text-xl font-semibold">LocalKnot</h4>
+              <p class="text-gray-600">地域のガイドと旅行者をつなぐサービス</p>
+              <p class="text-sm text-gray-500 mt-1">技術: Rails7, Render, S3, Tailwind CSS</p>
+              <div class="mt-2 text-sm">
+                <a href="https://github.com/kawatako/LocalKnot" class="text-blue-600 underline" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <p class="text-gray-700 text-sm">
-        筋肉とWebのハイブリッド型エンジニア。<br />人を笑顔にするプロダクトが好きです💪
-      </p>
+    <!-- 技術スタック セクション -->
+    <section class="py-12 bg-gray-100">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-center">技術スタック</h2>
 
-      <div class="flex justify-center gap-3">
-        <a href="https://github.com/your-username" class="text-gray-600 hover:text-black transition" target="_blank">GitHub</a>
-        <a href="https://twitter.com/your-twitter" class="text-gray-600 hover:text-black transition" target="_blank">X(Twitter)</a>
+        <h3 class="text-lg font-semibold mt-6 mb-2">言語</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/ruby.png" alt="Ruby" class="w-6 h-6" /> Ruby
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/typescript.png" alt="TypeScript" class="w-6 h-6" /> TypeScript
+          </div>
+        </div>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">フレームワーク・ライブラリ</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/rails.png" alt="Rails" class="w-6 h-6" /> Ruby on Rails 7
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/react.png" alt="React" class="w-6 h-6" /> React 18
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/nextjs.png" alt="Next.js" class="w-6 h-6" /> Next.js 15 (App Router)
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/prisma.png" alt="Prisma" class="w-6 h-6" /> Prisma
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/supabase.png" alt="Supabase" class="w-6 h-6" /> Supabase
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/clerk.png" alt="Clerk" class="w-6 h-6" /> Clerk
+          </div>
+        </div>
+
+        <h3 class="text-lg font-semibold mt-6 mb-2">その他</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/docker.png" alt="Docker" class="w-6 h-6" /> Docker
+          </div>
+          <div class="flex items-center gap-2 p-4 bg-white rounded shadow">
+            <img src="./public/logo/postgresql.png" alt="PostgreSQL" class="w-6 h-6" /> PostgreSQL
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="flex flex-wrap justify-center gap-2">
-        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Next.js</span>
-        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Rails</span>
-        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Tailwind CSS</span>
-        <span class="bg-pink-100 text-pink-700 text-xs px-2 py-1 rounded-full">Supabase</span>
+    <!-- Contact セクション -->
+    <section class="py-12 bg-white border-t">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">お問い合わせ / SNS</h2>
+        <p class="mb-2 text-gray-700">📧 h2skawata@gmail.com</p>
+        <div class="flex justify-center flex-wrap gap-6 text-blue-600 text-sm">
+          <a href="https://github.com/kawatako" class="underline" target="_blank">github</a>          
+          <a href="https://x.com/Kawa_Rubypg" class="underline" target="_blank">X (旧Twitter)</a>
+          <a href="https://zenn.dev/kawatako" class="underline" target="_blank">Zenn</a>
+          <a href="https://note.com/kawatako_blog" class="underline" target="_blank">note</a>
+        </div>
       </div>
-
-      <footer class="text-xs text-gray-400 pt-4 border-t">
-        &copy; 2025 Kawata Shota
-      </footer>
-    </main>
+    </section>
   </body>
 </html>
